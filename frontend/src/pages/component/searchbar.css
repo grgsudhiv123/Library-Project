@@ -1,0 +1,89 @@
+.search-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.search-navbar-logo img {
+    width: 40px; /* Adjust logo size */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.search-container {
+    flex-grow: 1;
+    max-width: 600px;
+    position: relative;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-container button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative; /* Add this line */
+}
+
+
+.user-info span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between the icon and text */
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .drop-btn:hover {
+    background-color: #f0f0f0;
+}
+

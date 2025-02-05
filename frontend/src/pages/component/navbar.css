@@ -1,0 +1,158 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-right: 1px solid #e5e7eb;
+    transition: all 0.3s;
+    /* position: fixed; */
+}
+
+.navbar.w-48 {
+    width: 12rem;
+}
+
+.navbar.w-16 {
+    width: 4rem;
+}
+
+.menu-toggle-btn {
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle-btn:hover {
+    background-color: #f3f4f6;
+    transition: background-color 0.3s;
+}
+
+.nav-items {
+    flex: 1;
+}
+
+.nav-item-btn {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover and active state */
+.nav-item-btn:hover{
+    background-color: #f3f4f6;  /* Slightly darker background on hover or when active */
+}
+.nav-item-btn.active {
+    background-color: #f3f4f6;  /* Slightly darker background on hover or when active */
+    box-shadow: inset 4px 0 0 0 rgba(255, 0, 0, 0.2); /* Dark left border shadow */
+}
+
+/* Icon styling */
+.nav-item-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Nav item label */
+.nav-item-label {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Active state for the label */
+.nav-item-btn.active .nav-item-label {
+    color: #000000; /* Change text color to blue when the item is active */
+    font-weight: 550; /* Make the label text bolder */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for overlay page */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.book-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.borrow-btn {
+    align-self: flex-end;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: rgb(131, 131, 131);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.close-btn:hover{
+    color: rgb(255, 75, 75);
+    font-weight: 350;
+    transition: .4s;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: .3s;
+}

@@ -1,0 +1,145 @@
+.user-book-container {
+    width: 95%; 
+    max-width: 1400px;  /* Increased max-width for larger screens */
+    min-width: 500px;  /* Increased min-width */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; 
+    height: auto; 
+}
+
+@media (max-width: 1024px) {
+    .user-book-container {
+        width: 95%; 
+        max-width: 1100px; /* Increased width for medium screens */
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-book-container {
+        width: 98%; 
+        max-width: 800px; /* Slightly larger for tablets */
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-book-container {
+        width: 100%;
+        max-width: 600px; /* Increased for small screens */
+        min-height: 30vh;
+    }
+}
+
+
+.user-book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: fit-content;
+    max-height: 80vh;
+    padding: 10px;
+}
+
+/* Updated Book Card Layout */
+.user-book-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-book-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image on the Left */
+.user-book-card img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Book Details in the Center */
+.user-book-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.user-book-info h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* Buttons on the Right */
+.user-btns-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.user-btns-info button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-btns-info button:hover {
+    box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.4);
+}
+
+/* Right Section (Status & Stock) */
+.user-status-stock {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Pagination */
+.user-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.user-pagination button {
+    padding: 10px 15px;
+    background-color: #374151; 
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}

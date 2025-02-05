@@ -1,0 +1,106 @@
+/* Centering the registration form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Styling the registration form box */
+.sign-up-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Header styling */
+.form-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* Labels for input fields */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Input field styling */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #343fb4;
+}
+
+/* Signup button */
+.form-button {
+    background-color: #343fb4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-button:hover {
+    background-color: #003180;
+}
+
+/* Signup link */
+.form-container a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-container a:hover {
+    color: #0e5aab;
+}
+
+/* Password visibility toggle */
+.password-toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.password-toggle input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Error messages */
+.auth-error {
+    color: red;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .sign-up-form {
+        padding: 24px;
+        max-width: 90%;
+    }
+}

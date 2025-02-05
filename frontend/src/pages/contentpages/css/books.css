@@ -1,0 +1,194 @@
+
+.book-container {
+    width: 80%; 
+    max-width: 1100px; 
+    min-width: 300px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; 
+    height: auto; 
+}
+
+@media (max-width: 1024px) {
+    .book-container {
+        width: 90%; 
+        max-width: 900px;
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-container {
+        width: 95%; 
+        max-width: 700px;
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-container {
+        width: 100%;
+        max-width: 500px;
+        min-height: 30vh;
+    }
+}
+
+
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    margin-top: 20px;
+    padding-right: 10px; 
+    max-height: 80vh; 
+}
+
+.book-card {
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.book-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.book-card .description {
+    font-style: italic;
+    color: #444;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+    width: 100%; /* Ensures the image takes up the full width of the card */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Rounded corners on the image */
+    object-fit: contain; /* Ensures the image fits within the container without cropping */
+    max-height: 300px; /* Restricts the image height for uniformity */
+}
+
+.btns-info {
+    display: flex;
+    justify-content: space-between; /* Ensures left & right alignment */
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    border-top: 1px solid #ddd; /* Optional: Adds a subtle separator */
+    padding-bottom: 0; /* Remove extra padding */
+}
+
+/* Button Styling */
+.btns-info button {
+    /* background: linear-gradient(135deg, #343434, #b2b2b2); */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns-info button:hover {
+    /* background: linear-gradient(135deg, #aaa5a8, #ff6a00); */
+    box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.4);
+}
+
+/* Right Section (Status & Stock) */
+.btns-info .status-stock {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Fix potential body overflow issues */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #374151; 
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:hover {
+    background-color: #1f2937; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.pagination button.active {
+    background-color: #ff6347; /* Accent color for active button */
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.4);
+    transform: scale(1.1);
+}
+
+.pagination button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.pagination .page-number {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    background-color: #e5e7eb;
+}
+
+
+
+
+
+
+
+
+
+

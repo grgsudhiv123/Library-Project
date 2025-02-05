@@ -1,0 +1,70 @@
+/* Home container that holds both Navbar and content */
+.home-container {
+    display: flex;
+    /* min-height: 100vh; */
+}
+
+/* Content container takes the rest of the space */
+.content-container {
+    flex: 1;
+    background-color: #f9fafb;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-right: 1px solid #e5e7eb;
+    transition: all 0.3s;
+    height: 100vh;  /* Make sure navbar takes full height */
+}
+
+.navbar.w-48 {
+    width: 12rem;
+}
+
+.navbar.w-16 {
+    width: 4rem;
+}
+
+.menu-toggle-btn {
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle-btn:hover {
+    background-color: #f3f4f6;
+    transition: background-color 0.3s;
+}
+
+.nav-items {
+    flex: 1;
+}
+
+.nav-item-btn {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-item-btn:hover {
+    background-color: #f3f4f6;
+    transition: background-color 0.3s;
+}
+
+.nav-item-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nav-item-label {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
